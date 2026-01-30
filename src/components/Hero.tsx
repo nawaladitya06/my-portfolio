@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image"; // Ensures the photo works
-import { Github, Linkedin, Mail, Code2, Cpu } from "lucide-react";
+import { Github, Linkedin, Mail, Code2, Cpu, Download } from "lucide-react";
 
 // --- TERMINAL COMPONENT ---
 const InteractiveTerminal = () => {
@@ -190,6 +190,15 @@ export default function Hero() {
             </a>
             <a href="https://www.linkedin.com/in/aditya-nawal" target="_blank" className="p-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all">
               <Linkedin className="text-gray-400" size={20} />
+            </a>
+            {/* NEW: Resume Download Button */}
+            <a
+              href="/Aditya Nawal Resume.pdf"
+              download="Aditya_Nawal_Resume.pdf"
+              className="px-6 py-3 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 text-white font-medium transition-all flex items-center gap-2 text-sm backdrop-blur-md"
+            >
+              <Download size={18} className="text-purple-400" />
+              Resume
             </a>
             <a
               href="mailto:nawaladitya06@gmail.com"

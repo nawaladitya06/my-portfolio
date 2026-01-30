@@ -110,7 +110,7 @@ export const PROJECTS = [
     tech: ["Java", "XML", "Android Studio"],
     year: "2025",
     size: "col-span-1",
-    img: "/projects/todo-android.png",
+    img: "/projects/todo-android.jpeg",
     links: {
       github: "",
       demo: "",
